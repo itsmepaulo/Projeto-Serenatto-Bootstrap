@@ -1,0 +1,137 @@
+:root {
+  --bege: #E6E0D6;
+  --marrom-escuro: #816D4F;
+  --marrom-claro: #B29463;
+
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+
+}
+
+input[type=checkbox] {
+  border: 2px solid var(--marrom-claro);
+  box-shadow: none;
+  cursor: pointer;
+}
+
+input[type=checkbox]:checked,
+input[type="checkbox"]:focus {
+  background-color: var(--marrom-claro);
+  border-color: var(--marrom-claro);
+  box-shadow: none;
+  outline: none;
+}
+
+.banner-1 {
+  background-image: url(assets/banner-1.png);
+
+}
+
+.banner-2 {
+  background-image: url(assets/banner-2.png);
+
+}
+
+.banner-3 {
+
+  background-image: url(assets/banner-3.png);
+
+}
+
+.banners {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /* para fixar a imagem no lugar dela */
+}
+
+.banners-titulo {
+  --bs-bg-opacity: .2;
+
+}
+
+.color-btn, .accordion-button {
+  background-color: var(--marrom-claro);
+  border: none;
+  color: black;
+}
+
+.color-btn:hover {
+  background-color: var(--marrom-escuro);
+  transition: 1s;
+
+}
+
+input[type='range'] {
+  overflow: hidden;
+
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+  background-color: var(--marrom-escuro);
+
+}
+
+input[type='range']::-webkit-slider-thumb {
+  background: var(--marrom-claro);
+  border: none;
+
+}
+
+input[type='range']::-webkit-slider-thumb:hover{
+
+  background: #a08559;
+  transition: .3s;
+}
+
+.larg{
+  width: 80vw;
+  margin: auto;
+  background-color: #868e9618;
+}
+
+.form-color{
+  color:#6D7072;
+}
+
+.rodape{
+  background-color: var(--marrom-claro);
+
+}
+
+i{
+  font-size: 2rem ;
+
+}
+
+.modal-size{
+  width: 50vw;
+  
+}
+
+
+[data-bs-theme="dark"] {
+  color: white;
+  .nav-link, .card-body, .offcanvas, .accordion{
+    --bs-nav-link-color: white;
+    --bs-card-color:white;
+    --bs-offcanvas-color: white;
+    --bs-accordion-color: white;
+   
+  }
+
+}
+
+@media screen and (min-width:1000px){
+  
+  .larg{
+    width: 50vw;
+
+  }
+
+}
